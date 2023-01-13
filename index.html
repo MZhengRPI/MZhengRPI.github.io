@@ -24,7 +24,7 @@
               </p>
               <p>
                 I obtained my PhD degree from <a href="https://ecse.rpi.edu/">ECSE Department of Rensselaer Polytechnic Institute</a>. My advisor is <a href="https://sites.ecse.rpi.edu/~rjradke/">Prof. Rich Radke</a>. 
-                I obtained my master and bachelor degree from Beijing Institue of Technology, Beijing, China.
+                I received my master and bachelor degree from Beijing Institue of Technology, Beijing, China.
               </p>
               <p style="text-align:center">
                 <a href="mailto:mengzhengrpi@gmail.com">Email</a> &nbsp/&nbsp
@@ -54,7 +54,10 @@
         <tr onmouseout="multivHMR_stop()" onmouseover="multivHMR_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <img src='images/Multiv_HMR_AAAI23.png' width="190">
+              <img class="image1" src="images/Multiv_HMR_AAAI23_teaser.png" width="190" />
+              <br>  
+              <br>  
+              <img class="image2" src="images/Multiv_HMR_AAAI23.png" width="190"/>
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -72,7 +75,7 @@
             <em>AAAI (<strong>oral</strong>)</em>, 2023
             <p></p>
             <p>
-              A novel simulation-based training pipeline for multi-view human mesh recovery.
+              A novel simulation-based training pipeline for multi-view human mesh recovery, which (a) relies on intermediate 2D representations which are more robust to synthetic-to-real domain gap; (b) leverages learnable calibration and triangulation to adapt to more diversified camera setups; and (c) progressively aggregates multi-view information in a canonical 3D space to remove ambiguities in 2D representations.
             </p>
           </td>
         </tr>		
@@ -81,6 +84,8 @@
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <img src='images/3DPatientM_MICCAI22.png' width="190">
+              <br>
+              <img src='images/3DPatientM_MICCAI22_kp.png' width="190">
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -98,7 +103,7 @@
             <em>MICCAI (<strong>early accept</strong>)</em>, 2022
             <p></p>
             <p>
-              A generic modularized 3D patient modeling method with generalized body keypoint detection and self-supervised mesh modeling.
+              A generic modularized 3D patient modeling method consists of (a) a multi-modal keypoint detection module with attentive fusion for 2D patient joint localization, to learn complementary cross-modality patient body information, leading to improved keypoint localization robustness and generalizability in a wide variety of imaging and clinical scenarios; and (b) a self-supervised 3D mesh regression module which does not require expensive 3D mesh parameter annotations to train, bringing immediate cost benefits for clinical deployment.
             </p>
           </td>
         </tr>	
@@ -123,7 +128,7 @@
             <em>IJCAI</em>, 2022
             <p></p>
             <p>
-              A novel method to generate generic visual similarity explanations with gradient-based attention.
+              A novel method to generate generic visual similarity explanations with gradient-based attention. It is agnostic to the specific similarity model type, e.g., we show applicability to Siamese, triplet, and quadruplet models. Furthermore, we make our proposed similarity attention a principled part of the learning process, resulting in a new paradigm for learning similarity functions. We demonstrate that our learning mechanism results in more generalizable, as well as explainable, similarity models.
             </p>
           </td>
         </tr>	
@@ -149,7 +154,7 @@
             <em>IEEE Transactions on Medical Imaging</em>, 2023
             <p></p>
             <p>
-              A privacy-preserving FL framework leveraging unlabeled public data for one-way offline knowledge distillation.
+              A privacy-preserving FL framework leveraging unlabeled public data for one-way offline knowledge distillation. The central model is learned from local knowledge via ensemble attention distillation. Our technique uses decentralized and heterogeneous local data like existing FL approaches, but more importantly, it significantly reduces the risk of privacy leakage.
             </p>
           </td>
         </tr>	
@@ -158,6 +163,8 @@
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <img src='images/CRA_ECCV22.png' width="190">
+              <br>
+              <img src='images/CRA_ECCV22_pp.png' width="190">
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -175,7 +182,7 @@
             <em>ECCV</em>, 2022
             <p></p>
             <p>
-              Cross-representation alignment utilizing the complementary information from the robust but sparse representation (2D keypoints).
+              Cross-representation alignment utilizing the complementary information from the robust but sparse representation (2D keypoints). Specifically, the alignment errors between initial mesh estimation and both 2D representations are forwarded into regressor and dynamically corrected in the following mesh regression. This adaptive cross-representation alignment explicitly learns from the deviations and captures complementary information: robustness from sparse representation and richness from dense representation.
             </p>
           </td>
         </tr>	
@@ -201,7 +208,7 @@
             <em>ECCV</em>, 2022
             <p></p>
             <p>
-              A generic framework that enables existing segmentation networks to propose candidate next clicks.
+              A generic framework that enables existing segmentation networks to propose candidate next clicks. These automatically generated clicks, termed pseudo clicks in this work, serve as an imitation of human clicks to refine the segmentation mask. We build PseudoClick on existing segmentation backbones and show how the click prediction mechanism leads to improved performance.
             </p>
           </td>
         </tr>	
@@ -210,6 +217,8 @@
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <img src='images/PREF_ECCV22.png' width="190">
+              <br>
+              <img src='images/PREF_ECCV22_pp.png' width="190">
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -227,7 +236,7 @@
             <em>ECCV (<strong>oral</strong>)</em>, 2022
             <p></p>
             <p>
-              A predictability regularization by first conditioning the estimated motion on latent embeddings, then by adopting a predictor network to enforce predictability on the embeddings.
+              A predictability regularization by first conditioning the estimated motion on latent embeddings, then by adopting a predictor network to enforce predictability on the embeddings. We propose to regularize the estimated motion to be predictable. If the motion from previous frames is known, then the motion in the near future should be predictable. 
             </p>
           </td>
         </tr>	
@@ -253,7 +262,7 @@
             <em>CVPR</em>, 2022
             <p></p>
             <p>
-              A learning-based approach to estimate the patient's internal organ deformation for arbitrary human poses in order to assist with radiotherapy and similar medical protocols.
+              A novel learning-based approach to estimate the patient's internal organ deformation for arbitrary human poses in order to assist with radiotherapy and similar medical protocols. The underlying method first leverages medical scans to learn a patient-specific representation that potentially encodes the organ's shape and elastic properties. During inference, given the patient's current body pose information and the organ's representation extracted from previous medical scans, our method can estimate their current organ deformation to offer guidance to clinicians.
             </p>
           </td>
         </tr>	
@@ -261,6 +270,8 @@
         <tr onmouseout="VOS_WACV22_stop()" onmouseover="VOS_WACV22_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
+              <img src='images/VOS_WACV22_teaser.png' width="190">
+              <br>
               <img src='images/VOS_WACV22.png' width="190">
             </div>
           </td>
@@ -278,7 +289,7 @@
             <em>WACV</em>, 2022
             <p></p>
             <p>
-              A Multimotion and Appearance Self-supervised Network (MASNet) to introduce multi-scale motion information and appearance information of scene for MOD.
+              A Multimotion and Appearance Self-supervised Network (MASNet) to introduce multi-scale motion information and appearance information of scene for MOD. To encode multi-scale motion and appearance, in MASNet we respectively design a multi-branch flow encoding module and an image inpainter module.
             </p>
           </td>
         </tr>	
@@ -287,7 +298,8 @@
         <tr onmouseout="HMR_BMVC21_stop()" onmouseover="HMR_BMVC21_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <img src='images/HMR_BMVC21.png' width="190">
+              <img src='images/HMR_BMVC21_pp.png' width="190">
+              <!-- <img src='images/HMR_BMVC21_pp.png' width="160"> -->
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -304,7 +316,7 @@
             <em>BMVC (<strong>oral</strong>)</em>, 2021
             <p></p>
             <p>
-              A solution to the problem of obese human mesh recovery, i.e., fitting a parametric human mesh to images of obese people.
+              A solution to the problem of obese human mesh recovery, i.e., fitting a parametric human mesh to images of obese people. We present a simple baseline that is scalable and can be easily used in conjunction with existing algorithms to improve their performance. We also present a generalized human mesh optimization algorithm that substantially improves the performance of existing methods on both obese person images as well as community-standard benchmark datasets.
             </p>
           </td>
         </tr>	
@@ -326,10 +338,10 @@
             Amit K. Roy-Chowdhury, Terrence Chen,
             <a href="http://wuziyan.com/">Ziyan Wu</a>
             <br>
-            <em>ICCV, 2021
+            <em>ICCV</em>, 2021
             <p></p>
             <p>
-              Explicit pathways for learning discriminative temporal and spatial features, with each component further factorized to capture complementary person-specific appearance and motion information.
+              A flexible new computational unit that can be used in conjunction with most existing 3D convolutional neural network architectures for re-ID. The key innovations of the proposed STRF over prior work include explicit pathways for learning discriminative temporal and spatial features, with each component further factorized to capture complementary person-specific appearance and motion information. 
             </p>
           </td>
         </tr>	
@@ -342,7 +354,7 @@
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
             <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ge_A_Peek_Into_the_Reasoning_of_Neural_Networks_Interpreting_With_CVPR_2021_paper.pdf">
-              <papertitle>A Peek Into the Reasoning of Neural Networks: Interpreting with Structural Visual Concepts</papertitle>
+              <papertitle>Spatio-Temporal Representation Factorization for Video-based Person Re-Identification</papertitle>
             </a>
             <br>
             <a href="https://gyhandy.github.io/">Yunhao Ge</a>,
@@ -352,10 +364,10 @@
             Terrence Chen, Laurent Itti,
             <a href="http://wuziyan.com/">Ziyan Wu</a>
             <br>
-            <em>CVPR, 2021
+            <em>CVPR</em>, 2021
             <p></p>
             <p>
-              A framework (VRX) to interpret classification NNs with intuitive structural visual concepts.
+              A framework (VRX) to interpret classification NNs with intuitive structural visual concepts. Given a trained classification model, VRX extracts relevant class-specific visual concepts and organizes them using structural concept graphs (SCG) based on pairwise concept relationships. By means of knowledge distillation, we show VRX can take a step towards mimicking the reasoning process of NNs and provide logical, concept-level explanations for final model decisions.
             </p>
           </td>
         </tr>	
@@ -363,7 +375,7 @@
         <tr onmouseout="EVAE_CVPR20_stop()" onmouseover="EVAE_CVPR20_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <img src='images/EVAE_CVPR2020.png' width="190">
+              <img src='images/EVAE_CVPR20.png' width="190">
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -379,10 +391,10 @@
             Bir Bhanu, <a href="https://sites.ecse.rpi.edu/~rjradke/">Richard J. Radke</a>,
             Octavia Camps
             <br>
-            <em>CVPR, 2020
+            <em>CVPR</em>, 2020
             <p></p>
             <p>
-              A novel technique to visually explain VAEs by means of gradient-based attention.
+              A novel technique to visually explain VAEs by means of gradient-based attention. We present methods to generate visual attention from the learned latent space, and also demonstrate such attention explanations serve more than just explaining VAE predictions. We show how these attention maps can be used to localize anomalies in images, demonstrating state-of-the-art performance on the MVTec-AD dataset.
             </p>
           </td>
         </tr>	
@@ -403,7 +415,7 @@
             <a href="http://wuziyan.com/">Ziyan Wu</a>,
             <a href="https://sites.ecse.rpi.edu/~rjradke/">Richard J. Radke</a>
             <br>
-            <em>CVPR, 2019
+            <em>CVPR</em>, 2019
             <p></p>
             <p>
               A framework for re-id that provides mechanisms to make attention and attention consistency end-to-end trainable in a Siamese learning architecture, resulting in a technique for robust cross-view matching as well as explaining the reasoning for why the model predicts that the two images belong to the same person
@@ -426,10 +438,10 @@
             <a href="https://karanams.github.io/">Srikrishna Karanam</a>,
             <a href="https://sites.ecse.rpi.edu/~rjradke/">Richard J. Radke</a>
             <br>
-            <em>CVPR Workshop, 2018
+            <em>CVPR Workshop</em>, 2018
             <p></p>
             <p>
-              A new multi-shot re-id dataset, called RPIfield, which provides explicit time-stamp information for each candidate.
+              A new multi-shot re-id dataset, called RPIfield, which provides explicit time-stamp information for each candidate. The RPIfield dataset is comprised of 12 outdoor camera videos, with 112 known actors walking along pre-specified paths among about 4000 distractors. Each actor in RPIfield has multiple reappearances in one or more camera views, which allows the study of re-id algorithms in a more general context, especially with respect to temporal aspects.
             </p>
           </td>
         </tr>	
@@ -449,13 +461,13 @@
             <a href="https://karanams.github.io/">Srikrishna Karanam</a>,
             <a href="https://sites.ecse.rpi.edu/~rjradke/">Richard J. Radke</a>
             <br>
-            <em>IEEE Transactions on Biometrics, Behavior, and Identity Science, 2020
+            <em>IEEE Transactions on Biometrics, Behavior, and Identity Science</em>, 2020
             <p></p>
             <p>
-              A new algorithm to automatically reconstruct the time-stamped spatial trajectory of a person of interest moving in a camera network.
+              A new algorithm to automatically reconstruct the time-stamped spatial trajectory of a person of interest moving in a camera network. With this output, a surveillance system user can easily tell where in the camera network the person of interest was located at any specific time.
             </p>
           </td>
-        </tr>		
+        </tr>	
 
         <tr onmouseout="SPM18_stop()" onmouseover="SPM18_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
@@ -471,10 +483,10 @@
             <a href="https://scholar.google.com/citations?user=PgbUI2sAAAAJ&hl=en">Siqi Nie</a>,
             <strong>Meng Zheng</strong>, Qiang Ji
             <br>
-            <em>IEEE Signal Processing Magazine, 2018
+            <em>IEEE Signal Processing Magazine</em>, 2018
             <p></p>
             <p>
-              A review of different structures of deep directed generative models and the learning and inference algorithms associated with the structures.
+              A review of different structures of deep directed generative models and the learning and inference algorithms associated with the structures. We focus on a specific structure that consists of layers of Bayesian networks (BNs) due to the property of capturing inherent and rich dependencies among latent variables.
             </p>
           </td>
         </tr>	
