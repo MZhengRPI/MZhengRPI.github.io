@@ -49,8 +49,63 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  
-  <tr onmouseout="SMPLA_AAAI24_stop()" onmouseover="SMPLA_AAAI24_start()">
+        
+        
+        <tr onmouseout="threeDFSS_stop()" onmouseover="threeDFSS_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/3DFSS_1_MICCAI24.png' width="190">
+              <br>
+              <img src='images/3DFSS_2_MICCAI24.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/abs/2408.14427">
+              <papertitle>Few-Shot 3D Volumetric Segmentation with Multi-Surrogate Fusion</papertitle>
+            </a>
+            <br>
+            <strong>Meng Zheng</strong>, 
+            <a href="https://planche.me/">Benjamin Planche</a>, 
+            Zhongpai Gao,
+            Terrence Chen,
+            <a href="https://sites.ecse.rpi.edu/~rjradke/">Richard J. Radke</a>
+            <a href="http://wuziyan.com/">Ziyan Wu</a>
+            <br>
+            <em>MICCAI (<strong>early accept</strong>)</em>, 2024
+            <p></p>
+            <p>
+              We present MSFSeg, a novel few-shot 3D segmentation framework with a lightweight multi-surrogate fusion (MSF). MSFSeg is able to automatically segment unseen 3D objects/organs (during training) provided with one or a few annotated 2D slices or 3D sequence segments, via learning dense query-support organ/lesion anatomy correlations across patient populations. Our proposed MSF module mines comprehensive and diversified morphology correlations between unlabeled and the few labeled slices/sequences through multiple designated surrogates, making it able to generate accurate cross-domain 3D segmentation masks given annotated slices or sequences. We demonstrate the effectiveness of our proposed framework by showing superior performance on conventional few-shot segmentation benchmarks compared to prior art, and remarkable cross-domain cross-volume segmentation performance on proprietary 3D segmentation datasets for challenging entities, i.e., tubular structures, with only limited 2D or 3D labels.
+            </p>
+          </td>
+        </tr>	
+        
+        <tr onmouseout="DDGS_VLM_stop()" onmouseover="DDGS_VLM_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/DDGS_VLM_MM.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://openreview.net/forum?id=TjFn6xktTm">
+              <papertitle>Cross-Class Domain Adaptive Semantic Segmentation with Visual Language Models</papertitle>
+            </a>
+            <br>
+            Wenqi Ren, 
+            Ruihao Xia,
+            <strong>Meng Zheng</strong>, 
+            <a href="http://wuziyan.com/">Ziyan Wu</a>,
+            Yang Tang, 
+            Nicu Sebe
+            <br>
+            <em>ACM MM, 2024
+            <p></p>
+            <p>
+              We propose a label alignment method by leveraging VLMs to relabel pseudo labels for novel classes. Considering that VLMs typically provide only image-level predictions, we embed a two-stage method to enable fine-grained semantic segmentation and design a threshold based on the uncertainty of pseudo labels to exclude noisy VLM predictions. To further augment the supervision of novel classes, we devise memory banks with an adaptive update scheme to effectively manage accurate VLM predictions, which are then resampled to increase the sampling probability of novel classes. Through comprehensive experiments, we demonstrate the effectiveness and versatility of our proposed method across various CCDA scenarios.
+            </p>
+          </td>
+        </tr>	
+
+        <tr onmouseout="SMPLA_AAAI24_stop()" onmouseover="SMPLA_AAAI24_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <img class="image1" src="images/SMPLA_AAAI24_pip.png" width="190" />
@@ -60,9 +115,9 @@
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
-	    <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28171">
+	        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28171">
           	<papertitle>Implicit Modeling of Non-rigid Objects with Cross-Category Signals</papertitle>
-	    </a>
+	          </a>
             <br>
             Yuchun Liu, 
             <a href="https://planche.me/">Benjamin Planche</a>,
