@@ -79,6 +79,7 @@
             </p>
           </td>
         </tr>	
+
         
         <tr onmouseout="DDGS_VLM_stop()" onmouseover="DDGS_VLM_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
@@ -102,6 +103,41 @@
             <p></p>
             <p>
               We propose a label alignment method by leveraging VLMs to relabel pseudo labels for novel classes. Considering that VLMs typically provide only image-level predictions, we embed a two-stage method to enable fine-grained semantic segmentation and design a threshold based on the uncertainty of pseudo labels to exclude noisy VLM predictions. To further augment the supervision of novel classes, we devise memory banks with an adaptive update scheme to effectively manage accurate VLM predictions, which are then resampled to increase the sampling probability of novel classes. Through comprehensive experiments, we demonstrate the effectiveness and versatility of our proposed method across various CCDA scenarios.
+            </p>
+          </td>
+        </tr>	
+
+        <tr onmouseout="DF_HMR_stop()" onmouseover="DF_HMR_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/DF_HMR_ECCV24_1.png' width="190">
+              <br>
+              <br>
+              <img src='images/DF_HMR_ECCV24_.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/pdf/2407.09694">
+              <papertitle>Divide and Fuse: Body Part Mesh Recovery from Partially Visible Human Images</papertitle>
+            </a>
+            <br>
+            Tianyu Luan, Zhongpai Gao, Luyuan Xie, Abhishek Sharma, Hao Ding, 
+            <a href="https://planche.me/">Benjamin Planche</a>, 
+            <strong>Meng Zheng</strong>, 
+            Ange Lou, Terrence Chen, 
+            <a href="http://wuziyan.com/">Ziyan Wu</a>,
+            <br>
+            <em>ECCV, 2024
+            <p></p>
+            <p>
+              We introduce a novel bottom-up approach for human body mesh reconstruction, specifically designed to address the challenges posed by partial visibility and occlusion in input images. 
+              Traditional top-down methods, relying on whole-body parametric models like SMPL, falter when only a small part of the human is visible, as they require visibility of most of the human body for accurate mesh reconstruction. 
+              To overcome this limitation, our method employs a "Divide and Fuse (D&F)" strategy, reconstructing human body parts independently before fusing them, thereby ensuring robustness against occlusions. 
+              We design Human Part Parametric Models (HPPM) that independently reconstruct the mesh from a few shape and global location parameters, without inter-part dependency. 
+              A specially designed fusion module then seamlessly integrates the reconstructed parts, even when only a few parts are visible. 
+              We harness a large volume of ground truth SMPL data to train our parametric mesh models. 
+              To facilitate the training and evaluation of our method, we have established benchmark datasets featuring images of partially visible humans with HPPM annotations. 
+              Our experiments, conducted on our benchmark datasets, demonstrate the effectiveness of our D&F method, particularly in scenarios with substantial invisibility, where traditional approaches struggle to maintain reconstruction quality.
             </p>
           </td>
         </tr>	
