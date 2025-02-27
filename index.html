@@ -81,10 +81,109 @@
         </tr>	
 
         
-        <tr onmouseout="DDGS_VLM_stop()" onmouseover="DDGS_VLM_start()">
+        <tr onmouseout="DDGS_stop()" onmouseover="DDGS_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <img src='images/DDGS_VLM_MM.png' width="190">
+              <img src='images/DDGS_ICLR24_1.png' width="190">
+              <br>
+              <br>
+              <img src='images/DDGS_ICLR24_2.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/456ce0476c9b4689a74918b851cecd5a-Paper-Conference.pdf">
+              <papertitle>DDGS-CT: Direction-disentangled gaussian splatting for realistic volume rendering</papertitle>
+            </a>
+            <br>
+            Zhongpai Gao, Benjamin Planche, 
+            <strong>Meng Zheng</strong>, 
+            Xiao Chen, Terrence Chen, Chen Chen, Ziyan Wu
+            <br>
+            <em>NeurIPS, 2024
+            <p></p>
+            <p>
+              We propose a novel approach that balances realistic physics-inspired X-ray simulation with efficient, differentiable DRR generation using 3D Gaussian splatting (3DGS). Our direction-disentangled 3DGS (DDGS) method decomposes the radiosity contribution into isotropic and direction-dependent components, able to approximate complex anisotropic interactions without complex runtime simulations. Additionally, we adapt the 3DGS initialization to account for tomography data properties, enhancing accuracy and efficiency.
+            </p>
+          </td>
+        </tr>	
+
+
+        <tr onmouseout="OIS_VLM_stop()" onmouseover="OIS_VLM_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/OIS_ICLR24.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/abs/2410.12214">
+              <papertitle>Order-aware Interactive Segmentation</papertitle>
+            </a>
+            <br>
+            Bin Wang, 
+            Anwesa Choudhuri,
+            <strong>Meng Zheng</strong>, 
+            Zhongpai Gao, Benjamin Planche, Andong Deng, Qin Liu, Terrence Chen, Ulas Bagci, Ziyan Wu
+            <br>
+            <em>ICLR, 2024
+            <p></p>
+            <p>
+              We propose OIS: order-aware interactive segmentation, where we explicitly encode the relative depth between objects into order maps. We introduce a novel order-aware attention, where the order maps seamlessly guide the user interactions (in the form of clicks) to attend to the image features. We further present an object-aware attention module to incorporate a strong object-level understanding to better differentiate objects with similar order. Our approach allows both dense and sparse integration of user clicks, enhancing both accuracy and efficiency as compared to prior works.
+            </p>
+          </td>
+        </tr>	
+
+        <tr onmouseout="sDGS_VLM_stop()" onmouseover="sDGS_VLM_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/6DGS_ICLR24.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/pdf/2410.04974">
+              <papertitle>6DGS: Enhanced Direction-Aware Gaussian Splatting for Volumetric Rendering</papertitle>
+            </a>
+            <br>
+            Zhongpai Gao, Benjamin Planche
+            <strong>Meng Zheng</strong>, 
+            Anwesa Choudhuri, Terrence Chen, Ziyan Wu
+            <br>
+            <em>ICLR, 2024
+            <p></p>
+            <p>
+              We revisit 6D Gaussians and introduce 6D Gaussian Splatting (6DGS), which enhances color and opacity representations and leverages the additional directional information in the 6D space for optimized Gaussian control. Our approach is fully compatible with the 3DGS framework and significantly improves real-time radiance field rendering by better modeling view-dependent effects and fine details. The project page is: https://gaozhongpai.github.io/6dgs/
+            </p>
+          </td>
+        </tr>	
+
+
+        <tr onmouseout="tDVLGS_stop()" onmouseover="tDVLGS_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/3DVLGS_ICLR24.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/pdf/2410.07577">
+              <papertitle>3D Vision-Language Gaussian Splatting</papertitle>
+            </a>
+            <br>
+            Qucheng Peng, Benjamin Planche, Zhongpai Gao, 
+            <strong>Meng Zheng</strong>, 
+            Anwesa Choudhuri, Terrence Chen, Chen Chen, Ziyan Wu
+            <br>
+            <em>ICLR, 2024
+            <p></p>
+            <p>
+              We propose a solution that adequately handles the distinct visual and semantic modalities, i.e., a 3D vision-language Gaussian splatting model for scene understanding, to put emphasis on the representation learning of language modality. We propose a novel cross-modal rasterizer, using modality fusion along with a smoothed semantic indicator for enhancing semantic rasterization. We also employ a camera-view blending technique to improve semantic consistency between existing and synthesized views, thereby effectively mitigating over-fitting.
+            </p>
+          </td>
+        </tr>	
+
+        
+        <tr onmouseout="CCDA_VLM_stop()" onmouseover="CCDA_VLM_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/CCDA_VLM_MM.png' width="190">
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -95,7 +194,7 @@
             Wenqi Ren, 
             Ruihao Xia,
             <strong>Meng Zheng</strong>, 
-            <a href="http://wuziyan.com/">Ziyan Wu</a>
+            <a href="http://wuziyan.com/">Ziyan Wu</a>,
             Yang Tang, 
             Nicu Sebe
             <br>
