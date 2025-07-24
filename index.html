@@ -49,8 +49,123 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <tr onmouseout="chrome_stop()" onmouseover="chrome_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/chrome_ICCV25_1.png' width="190">
+              <br>
+              <br>
+              <img src='images/chrome_ICCV25_2.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/pdf/2503.15671">
+              <papertitle>Chrome: Clothed human reconstruction with occlusion-resilience and multiview-consistency from a single image</papertitle>
+            </a>
+            <br>
+            Arindam Dutta, 
+            <strong>Meng Zheng</strong>, 
+            Zhongpai Gao, 
+            <a href="https://planche.me/">Benjamin Planche</a>, 
+            Anwesha Choudhuri, Terrence Chen, Amit K Roy-Chowdhury, 
+            <a href="http://wuziyan.com/">Ziyan Wu</a>
+            <br>
+            <em>ICCV (<strong>highlight</strong>)</em>, 2025
+            <p></p>
+            <p>
+              We propose CHROME: Clothed Human Reconstruction with Occlusion-Resilience and Multiview-ConsistEncy from a Single Image, a novel pipeline designed to reconstruct occlusion-resilient 3D humans with multiview consistency from a single occluded image, without requiring either ground-truth geometric prior annotations or 3D supervision. Specifically, CHROME leverages a multiview diffusion model to first synthesize occlusion-free human images from the occluded input, compatible with off-the-shelf pose control to explicitly enforce cross-view consistency during synthesis. A 3D reconstruction model is then trained to predict a set of 3D Gaussians conditioned on both the occluded input and synthesized views, aligning cross-view details to produce a cohesive and accurate 3D representation. CHROME achieves significant improvements in terms of both novel view synthesis (upto 3 db PSNR) and geometric reconstruction under challenging conditions.
+            </p>
+          </td>
+        </tr>	
+
+
+        <tr onmouseout="sevenDGS_stop()" onmouseover="sevenDGS_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/7DGS_ICCV25_1.png' width="190">
+              <br>
+              <br>
+              <img src='images/7DGS_ICCV25_2.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/pdf/2503.07946">
+              <papertitle>7DGS: Unified Spatial-Temporal-Angular Gaussian Splatting</papertitle>
+            </a>
+            <br>
+            Zhongpai Gao, 
+            <a href="https://planche.me/">Benjamin Planche</a>, 
+            <strong>Meng Zheng</strong>, 
+            Anwesha Choudhuri, Terrence Chen,
+            <a href="http://wuziyan.com/">Ziyan Wu</a>
+            <br>
+            <em>ICCV</em>, 2025
+            <p></p>
+            <p>
+              We present 7D Gaussian Splatting (7DGS), a unified framework representing scene elements as seven-dimensional Gaussians spanning position (3D), time (1D), and viewing direction (3D). Our key contribution is an efficient conditional slicing mechanism that transforms 7D Gaussians into view- and time-conditioned 3D Gaussians, maintaining compatibility with existing 3D Gaussian Splatting pipelines while enabling joint optimization. Experiments demonstrate that 7DGS outperforms prior methods by up to 7.36 dB in PSNR while achieving real-time rendering (401 FPS) on challenging dynamic scenes with complex view-dependent effects.
+            </p>
+          </td>
+        </tr>	
+
+
+        <tr onmouseout="segtrack_stop()" onmouseover="segtrack_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/SegTrack_MICCAI25.png' width="190">
+              <br>
+              <br>
+              <img src='images/SegTrack_MICCAI25_2.png' width="190">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/abs/2503.24108">
+              <papertitle>PolypSegTrack: Unified Foundation Model for Colonoscopy Video Analysis</papertitle>
+            </a>
+            <br>
+            Anwesha Choudhuri, 
+            Zhongpai Gao, 
+            <strong>Meng Zheng</strong>, 
+            <a href="https://planche.me/">Benjamin Planche</a>, 
+            Terrence Chen,
+            <a href="http://wuziyan.com/">Ziyan Wu</a>
+            <br>
+            <em>MICCAI</em>, 2025
+            <p></p>
+            <p>
+              We introduce PolypSegTrack, a novel foundation model that jointly addresses polyp detection, segmentation, classification and unsupervised tracking in colonoscopic videos. Our approach leverages a novel conditional mask loss, enabling flexible training across datasets with either pixel-level segmentation masks or bounding box annotations, allowing us to bypass task-specific fine-tuning. Our unsupervised tracking module reliably associates polyp instances across frames using object queries, without relying on any heuristics. We leverage a robust vision foundation model backbone that is pre-trained unsupervisedly on natural images, thereby removing the need for domain-specific pre-training. Extensive experiments on multiple polyp benchmarks demonstrate that our method significantly outperforms existing state-of-the-art approaches in detection, segmentation, classification, and tracking.
+            </p>
+          </td>
+        </tr>	
         
         
+        <tr onmouseout="seq2time_stop()" onmouseover="seq2time_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/seq2time_CVPR25.png' width="190">
+              <br>
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/pdf/2411.16932">
+              <papertitle>PolypSegTrack: Unified Foundation Model for Colonoscopy Video Analysis</papertitle>
+            </a>
+            <br>
+            Andong Deng, Zhongpai Gao, Anwesa Choudhuri, <a href="https://planche.me/">Benjamin Planche</a>, 
+            <strong>Meng Zheng</strong>, 
+            Bin Wang, Chen Chen, 
+            Terrence Chen,
+            <a href="http://wuziyan.com/">Ziyan Wu</a>
+            <br>
+            <em>CVPR</em>, 2025
+            <p></p>
+            <p>
+              We propose Seq2Time, a data-oriented training paradigm that leverages sequences of images and short video clips to enhance temporal awareness in long videos. By converting sequence positions into temporal annotations, we transform largescale image and clip captioning datasets into sequences that mimic the temporal structure of long videos, enabling self-supervised training with abundant time-sensitive data. To enable sequence-to-time knowledge transfer, we introduce a novel time representation that unifies positional information across image sequences, clip sequences, and long videos.
+            </p>
+          </td>
+        </tr>	
+
+
         <tr onmouseout="threeDFSS_stop()" onmouseover="threeDFSS_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -107,6 +222,33 @@
         </tr>	
 
 
+        <tr onmouseout="gestureWACV25_stop()" onmouseover="gestureWACV25_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='images/gesture_WACV_25.png' width="190">
+              <br>
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <a href="https://arxiv.org/pdf/2407.14903">
+              <papertitle>Automated Patient Positioning with Learned 3D Hand Gestures</papertitle>
+            </a>
+            <br>
+            Zhongpai Gao*, Abhishek Sharma, 
+            <strong>Meng Zheng</strong>, 
+            <a href="https://planche.me/">Benjamin Planche</a>, 
+            Terrence Chen,
+            <a href="http://wuziyan.com/">Ziyan Wu</a>
+            <br>
+            <em>WACV</em>, 2025
+            <p></p>
+            <p>
+              We propose an automated patient positioning system that utilizes a camera to detect specific hand gestures from technicians, allowing users to indicate the target patient region to the system and initiate automated positioning. Our approach relies on a novel multi-stage pipeline to recognize and interpret the technicians’ gestures, translating them into precise motions of medical devices.
+            </p>
+          </td>
+        </tr>	
+
+
         <tr onmouseout="OIS_VLM_stop()" onmouseover="OIS_VLM_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -123,7 +265,7 @@
             <strong>Meng Zheng</strong>, 
             Zhongpai Gao, Benjamin Planche, Andong Deng, Qin Liu, Terrence Chen, Ulas Bagci, Ziyan Wu
             <br>
-            <em>ICLR</em>, 2024
+            <em>ICLR</em>, 2025
             <p></p>
             <p>
               We propose OIS: order-aware interactive segmentation, where we explicitly encode the relative depth between objects into order maps. We introduce a novel order-aware attention, where the order maps seamlessly guide the user interactions (in the form of clicks) to attend to the image features. We further present an object-aware attention module to incorporate a strong object-level understanding to better differentiate objects with similar order. Our approach allows both dense and sparse integration of user clicks, enhancing both accuracy and efficiency as compared to prior works.
@@ -146,7 +288,7 @@
             <strong>Meng Zheng</strong>, 
             Anwesa Choudhuri, Terrence Chen, Ziyan Wu
             <br>
-            <em>ICLR</em>, 2024
+            <em>ICLR</em>, 2025
             <p></p>
             <p>
               We revisit 6D Gaussians and introduce 6D Gaussian Splatting (6DGS), which enhances color and opacity representations and leverages the additional directional information in the 6D space for optimized Gaussian control. Our approach is fully compatible with the 3DGS framework and significantly improves real-time radiance field rendering by better modeling view-dependent effects and fine details. The project page is: https://gaozhongpai.github.io/6dgs/
@@ -170,7 +312,7 @@
             <strong>Meng Zheng</strong>, 
             Anwesa Choudhuri, Terrence Chen, Chen Chen, Ziyan Wu
             <br>
-            <em>ICLR</em>, 2024
+            <em>ICLR</em>, 2025
             <p></p>
             <p>
               We propose a solution that adequately handles the distinct visual and semantic modalities, i.e., a 3D vision-language Gaussian splatting model for scene understanding, to put emphasis on the representation learning of language modality. We propose a novel cross-modal rasterizer, using modality fusion along with a smoothed semantic indicator for enhancing semantic rasterization. We also employ a camera-view blending technique to improve semantic consistency between existing and synthesized views, thereby effectively mitigating over-fitting.
