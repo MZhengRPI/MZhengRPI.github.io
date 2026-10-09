@@ -90,8 +90,19 @@ strong {
 }
 
 em {
-  color: #6a1b9a;
+  color: #000;
   font-weight: 700;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+/* tighten the gap between the venue line and the paper summary */
+em + p {
+  margin: 0;
+}
+
+em + p + p {
+  margin-top: 8px;
 }
 
 heading {
@@ -101,8 +112,14 @@ heading {
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
+  font-size: 15px;
+  font-weight: 700;
+  color: #6a1b9a;
+}
+
+a:focus papertitle,
+a:hover papertitle {
+  color: #f09228;
 }
 
 name {
