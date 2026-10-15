@@ -151,3 +151,6 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+ul.news li {
+  margin-top: 6px;
+}
