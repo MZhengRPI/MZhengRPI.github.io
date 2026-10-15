@@ -64,7 +64,7 @@
 }
 
 a {
-  color: #4682B4;
+  color: #008B8B;
   text-decoration: none;
 }
 
@@ -119,6 +119,16 @@ papertitle {
 
 a:focus papertitle,
 a:hover papertitle {
+  color: #f09228;
+}
+
+/* author list: linked co-authors in black */
+td.paper > a {
+  color: #000;
+}
+
+td.paper > a:focus,
+td.paper > a:hover {
   color: #f09228;
 }
 
